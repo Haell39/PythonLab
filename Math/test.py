@@ -1,10 +1,11 @@
-import matplotlib.pyplot as plt
-import numpy as np
-import sympy as sy
-import math
+import sympy as sp
 
-def f(x):
-    return x ** 2
-    x = sy.symbols('x')
+# Definindo a variável e a função
+x = sp.Symbol('x')
+func = sp.sin(x)
 
-print(sy.integrate(f(x), (x, 0, 2)))
+# Calculando a integral
+integral = sp.integrate(func, x)
+
+# Exibindo o resultado
+print(f"A integral de sin(x) é: {integral}")
