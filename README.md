@@ -1,2 +1,3 @@
 # Python Pro
- More organized Python projects, studies and exercises.
+
+For more organized Python projects, studies and exercises.
