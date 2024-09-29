@@ -1,0 +1,96 @@
+Para corrigir sua defasagem em programação, é essencial entender os fundamentos da lógica de programação. A lógica de programação é a base que permite estruturar soluções para problemas complexos e desenvolver algoritmos eficientes. A seguir, apresento os principais conceitos e exemplos práticos para você começar.
+
+## Fundamentos da Lógica de Programação
+
+### 1. Algoritmos
+Um **algoritmo** é uma sequência finita de passos que descreve como resolver um problema. Pense nele como uma receita que orienta a execução de tarefas. Para criar um algoritmo, siga estas etapas:
+- **Compreensão do problema**: Entenda o que precisa ser resolvido.
+- **Desenvolvimento da lógica**: Planeje a sequência de ações.
+- **Implementação**: Traduza essa lógica em código.
+
+### 2. Estruturas de Controle
+As **estruturas de controle** permitem direcionar o fluxo do programa com base em condições. Os principais tipos são:
+- **Condicionais** (if, else): Executam diferentes blocos de código com base em condições.
+  
+  Exemplo em pseudocódigo:
+  ```plaintext
+  se condição for verdadeira
+      executar código A
+  senão
+      executar código B
+  ```
+
+- **Loops** (for, while): Permitem repetir um bloco de código enquanto uma condição for verdadeira.
+
+  Exemplo em Python:
+  ```python
+  for i in range(1, 6):
+      print(i)  # Imprime números de 1 a 5
+  ```
+
+### 3. Variáveis e Tipos de Dados
+As **variáveis** armazenam informações que podem ser manipuladas durante a execução do programa. Os tipos de dados mais comuns incluem:
+- **Inteiro (int)**: Números inteiros.
+- **Ponto Flutuante (float)**: Números decimais.
+- **Texto (string)**: Sequências de caracteres.
+- **Booleano (bool)**: Valores verdadeiro ou falso.
+
+Exemplo de declaração de variáveis em Python:
+```python
+numero = 10          # inteiro
+nome = "João"       # string
+temperatura = 36.5  # float
+ativo = True        # booleano
+```
+
+### 4. Operadores
+Os operadores são símbolos que realizam operações em variáveis e valores:
+- **Aritméticos**: +, -, *, / (soma, subtração, multiplicação, divisão).
+- **Relacionais**: ==, !=, <, > (comparações).
+- **Lógicos**: and, or, not (operações lógicas).
+
+### 5. Funções
+As **funções** são blocos de código que realizam tarefas específicas e podem ser reutilizadas. Elas ajudam a organizar o código e evitar repetição.
+
+Exemplo em Python:
+```python
+def calcular_media(notas):
+    return sum(notas) / len(notas)
+```
+
+## Exemplos Práticos
+
+### Cálculo da Média de Notas
+```java
+public double calcularMedia(double[] notas) {
+    double soma = 0;
+    for (double nota : notas) {
+        soma += nota;
+    }
+    return soma / notas.length;
+}
+```
+
+### Verificação de Números Primos
+```java
+public boolean ehPrimo(int numero) {
+    if (numero <= 1) return false;
+    for (int i = 2; i <= Math.sqrt(numero); i++) {
+        if (numero % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+```
+
+### Exibir Números Pares até N
+```java
+public void exibirNumerosPares(int n) {
+    for (int i = 2; i <= n; i += 2) {
+        System.out.println(i);
+    }
+}
+```
+
+

@@ -1,0 +1,86 @@
+
+### 1. **Funções como cidadãos de primeira classe**
+
+Em Python, as funções podem ser tratadas como variáveis. Isso significa que você pode passá-las como argumento para outras funções, retorná-las de funções e até mesmo armazená-las em variáveis.
+
+Exemplo:
+```python
+def saudar(nome):
+    return f"Olá, {nome}!"
+
+# Atribuir a função a uma variável
+mensagem = saudar
+
+# Chamar a função através da variável
+print(mensagem("Rafael"))
+```
+
+### 2. **Funções anônimas (lambda)**
+
+Em programação funcional, as funções anônimas são criadas usando `lambda`. Elas são úteis quando você precisa de uma função curta e simples, como em uma operação matemática.
+
+Exemplo:
+```python
+# Função lambda que calcula o quadrado de um número
+quadrado = lambda x: x ** 2
+
+print(quadrado(5))  # Resultado: 25
+```
+
+### 3. **Map**
+
+A função `map()` aplica uma função a todos os elementos de uma sequência (lista, tupla, etc.) e retorna um iterador com os resultados.
+
+Exemplo:
+```python
+numeros = [1, 2, 3, 4]
+
+# Usando map para elevar ao quadrado cada número
+quadrados = list(map(lambda x: x ** 2, numeros))
+
+print(quadrados)  # Resultado: [1, 4, 9, 16]
+```
+
+### 4. **Filter**
+
+A função `filter()` retorna os elementos de uma sequência que atendem a uma condição específica.
+
+Exemplo:
+```python
+numeros = [1, 2, 3, 4, 5, 6]
+
+# Usando filter para obter apenas os números pares
+pares = list(filter(lambda x: x % 2 == 0, numeros))
+
+print(pares)  # Resultado: [2, 4, 6]
+```
+
+### 5. **Reduce**
+
+A função `reduce()` (disponível no módulo `functools`) reduz uma lista a um único valor, aplicando uma função acumulativa. Por exemplo, você pode somar todos os elementos de uma lista.
+
+Exemplo:
+```python
+from functools import reduce
+
+numeros = [1, 2, 3, 4]
+
+# Usando reduce para somar todos os números da lista
+soma = reduce(lambda x, y: x + y, numeros)
+
+print(soma)  # Resultado: 10
+```
+
+### 6. **List Comprehension**
+
+Embora não seja exclusivamente funcional, as list comprehensions permitem aplicar funções de maneira funcional para criar listas de forma compacta.
+
+Exemplo:
+```python
+numeros = [1, 2, 3, 4]
+
+# Elevar cada número ao quadrado usando list comprehension
+quadrados = [x ** 2 for x in numeros]
+
+print(quadrados)  # Resultado: [1, 4, 9, 16]
+```

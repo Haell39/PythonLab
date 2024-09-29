@@ -1,0 +1,33 @@
+Aqui estão 10 exercícios práticos em Python que ajudarão a solidificar os fundamentos da linguagem:
+
+## 1. **Manipulação de Variáveis**
+Crie três variáveis para armazenar o primeiro nome, nome do meio e sobrenome de uma pessoa. Imprima uma frase formatada utilizando essas variáveis.
+
+## 2. **Interação com o Usuário**
+Desenvolva um programa que solicita o nome e a idade do usuário e imprime essas informações de forma formatada.
+
+## 3. **Cálculo da Média**
+Escreva um programa que recebe uma lista de números e retorna a média dos valores presentes na lista.
+
+## 4. **Verificação de Par ou Ímpar**
+Crie um programa que recebe um número como entrada e determina se ele é par ou ímpar.
+
+## 5. **Conversão de Temperatura**
+Implemente um programa que converte uma temperatura em graus Celsius para Fahrenheit usando a fórmula padrao
+
+
+## 6. **Cálculo do Fatorial**
+Desenvolva uma função que calcula o fatorial de um número dado como entrada. Lembre-se que o fatorial de $$n$$ é $$n! = n \times (n-1) \times (n-2) \times ... \times 1$$.
+
+## 7. **Verificação de Palíndromo**
+Crie um programa que verifica se uma palavra é um palíndromo (lida da mesma forma de trás para frente).
+
+## 8. **Contagem de Vogais**
+Desenvolva uma função que recebe uma palavra como entrada e retorna a quantidade de vogais presentes na palavra.
+
+## 9. **Encontrar o Maior Elemento em uma Lista**
+Escreva um programa que encontra o maior elemento em uma lista de números.
+
+## 10. **Caixa Eletrônico Simples**
+Implemente um programa que pergunta ao usuário o valor do saque e informa quantas notas de cada valor (1, 5, 10, 50 e 100 reais) serão fornecidas para completar esse valor.
+
