@@ -42,7 +42,6 @@ time.sleep(5)
 
 # Access the system site with loguin and password
 
-pyautogui.click(x=415, y=373)
 pyautogui.write("IqZCZ@example.com")
 pyautogui.press("tab")
 pyautogui.write("12345678")
