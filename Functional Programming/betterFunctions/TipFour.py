@@ -1,20 +1,21 @@
 from enum import Enum
 
 class Quality(Enum):
-    LOW: int = 480
-    MEDIUM: int = 1080
-    HIGH: int = 1440
+    LOW = 480
+    MEDIUM = 1080
+    HIGH = 1440
 
 class Privacy(Enum):
-    PRIVATE: str = 'Private'
-    UNLISTED: 'Unlisted'
-    PUBLIC: 'Public'
+    PRIVATE = 'Private'
+    UNLISTED = 'Unlisted'
+    PUBLIC = 'Public'
 
-def uploud(file: str, quality: Quality, privacy: Privacy) -> None:
-    print(f'Uploading: "{file})" in {quality.value}p ({privacy.value})')
+def upload(file: str, *, quality: Quality, privacy: Privacy) -> None: # With the asteristic, now the coder is obligated to user q arguments
+    print(f'Uploading: "{file}" in {quality.value}p ({privacy.value})')
 
-def main() ->  None:
-    uploud('rex.mp4', Quality.HIGH, Privacy.PUBLIC)
+def main() -> None:
+    upload('rex.mp4', quality=Quality.MEDIUM, privacy=Privacy.PRIVATE)
+    # uploud('rex.mp4', Quality.HIGH, Privacy.PUBLIC) can not do this becaus of the *
 
 if __name__ == '__main__':
     main()
