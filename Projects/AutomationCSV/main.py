@@ -7,30 +7,29 @@
 4. Insert all product info
 5. Submit all info to the system
 6. Repeat registration until all products are registered
-
-# Passo 1: Entrar no sistema da empresa 
-# Passo 2: Fazer login
-# Passo 3: Importar a base de produtos pra cadastrar
-# Passo 4: Cadastrar um produto
-# Passo 5: Repetir o processo de cadastro até o fim
 """
 
+# Create/Import a CSV file to VSCode
 import pyautogui
 import time
 import pandas as pd
 import keyboard
 
+pyautogui.FAILSAFE = (
+    True  # Habilita o failsafe (padrão) para pausar a automação em caso de emergência
+)
+
+
 # Importing the CSV file
-# Passo 3: Importar a base de produtos pra cadastrar
 table = pd.read_csv("Projects/AutomationCSV/produtos.csv")
 print(table)
 
 # definir o tempo de espera entre cada ação do  PyAutoGUI
 pyautogui.PAUSE = 0.6
 
-# abrir sistemas (Brave)
+# abrir navegador (librewolf)
 pyautogui.press("win")
-pyautogui.write("firefox")
+pyautogui.write("librewolf")  # 2. Open browser
 pyautogui.press("enter")
 time.sleep(3)
 pyautogui.hotkey("ctrl", "t")
@@ -41,32 +40,29 @@ pyautogui.press("enter")
 # wait to load
 time.sleep(5)
 
-# loguin in the system
-posicao = pyautogui.position()
-time.sleep(5)
-print(posicao)
+# Access the system site with loguin and password
 
-pyautogui.click(x=1354, y=343)
+pyautogui.click(x=415, y=373)
 pyautogui.write("IqZCZ@example.com")
 pyautogui.press("tab")
-pyautogui.click(x=1435, y=486)
+pyautogui.write("12345678")
+pyautogui.click(x=482, y=522)
+
+time.sleep(2)
 
 
-# Passo 4: Cadastrar um produto
+# 4. Insert all product info
 
 for line in table.index:
-    # parando a automação:
-    if keyboard.is_pressed("q"):
-        print("Ending program...")
-        break
-    pyautogui.click(x=1810, y=45)
+
+    pyautogui.click(x=426, y=268)
     pyautogui.write(str(table.loc[line, "codigo"]))
     pyautogui.press("tab")
     pyautogui.write(str(table.loc[line, "marca"]))
     pyautogui.press("tab")
     pyautogui.write(str(table.loc[line, "tipo"]))
     pyautogui.press("tab")
-    pyautogui.write(str(table.loc[line, "categoqMOLO000251  ria"]))
+    pyautogui.write(str(table.loc[line, "categoria"]))
     pyautogui.press("tab")
     pyautogui.write(str(table.loc[line, "preco_unitario"]))
     pyautogui.press("tab")
@@ -74,8 +70,7 @@ for line in table.index:
     pyautogui.press("tab")
     if not pd.isna(table.loc[line, "obs"]):
         pyautogui.write(str(table.loc[line, "obs"]))
-    pyautogui.click(x=1805, y=53)
+    pyautogui.click(x=409, y=864)
     pyautogui.scroll(5000)
 
-
-# Passo 5: Repetir o processo de cadastro até o fim
+# 6. Repeat registration until all products are registered
