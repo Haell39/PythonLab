@@ -27,9 +27,9 @@ from flask_socketio import SocketIO, send
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = (
-    "papaodkpfplfvmpbssnvdopkpfv"  # Use SECRET_KEY for session management
+    "papaodkpfplfvmpbssnvdopkpfv"  # Usando SECRET_KEY para segurança
 )
-app.debug = True  # Set debug mode correctly
+app.debug = True  # settando o debug mode
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 
@@ -45,4 +45,5 @@ def home():
 
 
 if __name__ == "__main__":
-    socketio.run(app, debug=True, host="localhost")  # Run with debug mode enabled
+    socketio.run(app, debug=True, host="localhost")  # roda com o debug mode habilitado
+    
