@@ -1,3 +1,5 @@
+### !! <span style="color:gold;">Obs</span>: Aplicar <span style="color:purple">perplexity-pro</span> em cada um dos módulos dps, antes de passar pro caderno esse resumo dos 8
+
 ## Matemática Financeira: Fundamentos para Conclusão Rápida do Curso
 
 Para concluir seu curso de matemática financeira de forma eficiente, é importante entender os tópicos abordados e dominar os conceitos e fórmulas essenciais. Abaixo, detalho cada módulo do curso, fornecendo explicações e exemplos práticos.
