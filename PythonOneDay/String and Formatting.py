@@ -1,25 +1,25 @@
+# Initializing string variables
 name = 'rafael dutra'
-print(name.upper())
+print(name.upper())  # Converts the string to uppercase
 
 name2 = 'test accounting'
-name2 = name2.upper()
-print(name2)
+name2 = name2.upper()  # Another way to convert to uppercase
+print(name2)  # Output: TEST ACCOUNTING
 
-# These all need assignment to work:
+# Demonstrating various string assignment and manipulation methods
 name = "hello world"
-name3 = "  hello world  "
+name3 = "  hello world  "  # String with leading and trailing spaces
 name4 = "hello world"
 string1 = "hello, world!"
 
-name = name.replace("hello", "hi") 
-name3 = name3.strip() # Remove blank spaces
-name4 = name4.capitalize()  # First letter capitalize
-string1 = string1.title() # Captalize all first letter
+# Replacing substring and manipulating strings
+name = name.replace("hello", "hi")  # Replaces 'hello' with 'hi'
+name3 = name3.strip()  # Removes leading and trailing whitespace
+name4 = name4.capitalize()  # Capitalizes the first letter
+string1 = string1.title()  # Capitalizes the first letter of each word
 
-print(name)   # hi world
-print(name3)  # hello world
-print(name4)  # Hello world
-print(string1)
-
-# Page 27
-
+# Printing the results of string manipulations
+print(name)    # Output: hi world
+print(name3)   # Output: hello world
+print(name4)   # Output: Hello world
+print(string1) # Output: Hello, World!
