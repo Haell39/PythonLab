@@ -1,2 +1,5 @@
-def calculator(x, y):
-     int input("Enter a number: ")
+def hello():
+     msg = 'Hello, World!'
+     print(msg)
+     
+hello()
