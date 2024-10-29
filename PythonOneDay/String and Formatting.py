@@ -23,3 +23,7 @@ print(name)    # Output: hi world
 print(name3)   # Output: hello world
 print(name4)   # Output: Hello world
 print(string1) # Output: Hello, World!
+
+print("\n")
+
+print(name, string1, name3, name4, sep="\n") #* Using only 1 print statement with arguments and a separator
