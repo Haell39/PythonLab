@@ -70,7 +70,7 @@ print(myList)
 myList.append("Hello, World!")
 print(myList)
 
-del myList[-2]  # myList will be [2, 20, 12, "Hello, World!"]
+del myList[-2]  # myList will be [2, 20, 6, "Hello, World!"]
 print(myList)
 
 
