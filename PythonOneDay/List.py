@@ -61,6 +61,18 @@ listA = [1, 2, 3, 6, 12, 24, 36, 48, 60, 72, 84, 96]
 listA.append("Text")  # append will add "Text" to the end of the list
 print(listA[-1])
 
+myList = listA[1:5]  # myList will be [2, 3, 6, 12]
+print(myList)
+
+myList[1] = 20
+print(myList)
+
+myList.append("Hello, World!")
+print(myList)
+
+del myList[-2]  # myList will be [2, 20, 12, "Hello, World!"]
+print(myList)
+
 
 
 
