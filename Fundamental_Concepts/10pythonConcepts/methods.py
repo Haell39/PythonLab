@@ -14,3 +14,6 @@ class Car:
 volvo: Car = Car('Volvo', 250)
 volvo.run()
 volvo.get_info()
+
+BMW: Car = Car('BMW', 330)
+BMW.run()

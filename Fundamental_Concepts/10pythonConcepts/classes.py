@@ -9,3 +9,4 @@ print(f"The BMW is {BMW.color} and has {BMW.horsepower}hp")
 
 Volvo: Car = Car("White", 250)
 print(f"The volvo is {Volvo.color}, and has {Volvo.horsepower}hp")
+
