@@ -20,3 +20,33 @@ Logical operators: and, or, not
 '''
 
 # if statement
+
+print("Discover if your number is even or odd: ")
+
+age = int(input("Enter your age: "))
+if age % 2 == 0:
+    print("Your age is Even!")
+else:
+    print("Your age is Odd!")
+
+# Inline if
+
+myInt = 5
+num1 = 12 if myInt == 10 else 13
+print(num1)
+
+#Exp 2:
+print("This is task A" if myInt == 5 else "This is task B")
+
+
+
+
+
+
+
+
+
+
+
+
+
