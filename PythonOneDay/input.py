@@ -33,6 +33,3 @@ print("Hello, World! My name is \"James Web\" and I am \'20\' years old" )
 
 print('Hello, World! My name is "James Web" and I am "20" years old')
 
-# OR:
-
-print("Hello, World! My name is \"James Web and I am \'20 years old")
