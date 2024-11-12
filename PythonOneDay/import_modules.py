@@ -16,4 +16,12 @@ print(a, b, sep= '\n')
 # ^^ Creating your own modules
 
 import primemodule
-answer = primemodule.isPrime(27)
+answer = primemodule.isPrime(2)
+print(answer)
+
+
+# importing from anywhere folder
+
+import sys
+sys.path.append(r'C:\Users\rafael.asantos\Documents\GitHub\PythonLab\MyPyModules\checkprime.py')
+import checkprime
