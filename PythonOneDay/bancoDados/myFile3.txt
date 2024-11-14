@@ -1,0 +1,5 @@
+teste de leitura do file 3
+linha 2
+linha 3
+Appending a new line
+Adding another line
