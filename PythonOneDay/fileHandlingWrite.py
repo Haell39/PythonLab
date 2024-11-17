@@ -1,10 +1,12 @@
 """
-=== Writing Files ===
+=== ^^ Writing Files ===
 Now that we’ve learned how to open and read a file, let’s try writing to it.
 To do that, we’ll use the ‘a’ (append) mode. You can also use the ‘w’
 mode, but you’ll erase all previous content in the file if the file already
 exists.
 """
+
+
 
 try:
     with open('PythonOneDay/bancoDados/myFile3.txt', 'a') as f:
@@ -28,4 +30,5 @@ except FileNotFoundError:
     print('File not Found!')
 except Exception as e:
     print(f'Unexpected error: {e}')
-
+    
+    

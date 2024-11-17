@@ -1,5 +1,5 @@
 # =============================
-# Example 1: Reading a File ('r' mode)
+# ^^ Example 1: Reading a File ('r' mode)
 # =============================
 try:
     f = open('PythonOneDay/bancoDados/myFile.txt', 'r')  # Opening file in read mode
@@ -17,7 +17,7 @@ finally:
 
 
 # =============================
-# Example 2: Writing to a File ('w' mode)
+# ^^ Example 2: Writing to a File ('w' mode)
 # =============================
 try:
     f = open('PythonOneDay/bancoDados/myFile2.txt', 'w')  # Opening file in write mode
@@ -33,7 +33,7 @@ finally:
 
 
 # =============================
-# Example 3: Appending to a File ('a' mode)
+# ^^ Example 3: Appending to a File ('a' mode)
 # =============================
 try:
     f = open('PythonOneDay/bancoDados/myFile2.txt', 'a')  # Opening file in append mode
@@ -48,7 +48,7 @@ finally:
 
 
 # =============================
-# Example 4: Reading and Writing ('r+' mode)
+# ^^ Example 4: Reading and Writing ('r+' mode)
 # =============================
 try:
     f = open('PythonOneDay/bancoDados/myFile2.txt', 'r+')  # Opening file in read+write mode
