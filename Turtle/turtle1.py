@@ -5,13 +5,18 @@ import turtle
 
 spawn_interval = 0.1
 ball_speed = 4
-increase_rotation_step = 0.25
+increase_rotation_step = 0.5
 colour_change_interval = 4
-frame_rate = 20
+frame_rate = 30
 time_per_frame = 1 / frame_rate
 
-# Set up window
+VIBRANT_COLORS = [
+    "red", "lime", "blue", "yellow", "magenta",
+    "cyan", "orange", "purple", "pink", "green"
+]
+
 window =  turtle.Screen()
+window.setup(width=360, height=640)
 window.bgcolor(0.2, 0.2, 0.2)
 window.tracer(0)
 window.bounce_on = True
@@ -21,7 +26,7 @@ spinner = turtle.Turtle()
 spinner.color("white")
 spinner.rotation_speed = 2
 
-# Spawn new balls
+
 colour = random.random(), random.random(), random.random()
 
 balls = []
@@ -34,13 +39,13 @@ def spawn_ball(reference):
     else:
         balls.append(turtle.Turtle())
     balls[-1].shape("circle")
-    balls[-1].color(colour)
+    balls[-1].color(random.choice(VIBRANT_COLORS))
     balls[-1].turtlesize(0.5)
     balls[-1].penup()
     balls[-1].setposition(reference.position())
     balls[-1].setheading(reference.heading())
 
-# Change speed of rotation
+
 def increase_anticlockwise_rotation():
     spinner.rotation_speed += increase_rotation_step
 
