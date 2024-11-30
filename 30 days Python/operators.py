@@ -113,7 +113,10 @@ print(len('milk') <= len('potato'))
 print(len('milk') == len('potato'))
 print(len('python') == len('dragon'))
 
+print('\n')
 # Boolean comparison
+
+
 
 
 
