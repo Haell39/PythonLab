@@ -116,7 +116,35 @@ print(len('python') == len('dragon'))
 print('\n')
 # Boolean comparison
 
+print('True == True', True == True)
+print('True == False', True == False)
+print('False == False', False == False)
+print('False == True', False == True)
+print('True and True', True and True)
+print('True or False', True or False)
 
 
+# Another way comparison 
+print('1 is 1', 1 is 1)
+print('1 is not 1', 1 is not 1)
+print('A in Rael', 'A' in 'Rael')
+print('B in ball', 'B' in 'ball') # False, theres is on uppercase
+print('coding' in 'coding for all')
+print('a' not in 'Rael')
+print('a in an', 'a' in 'an')
+print('4 is 2 ** 2', 4 is 2 ** 2)
 
+
+print(3 > 2 and 4 > 3) # True - because both statements are true
+print(3 > 2 and 4 < 3) # False - because the second statement is false
+print(3 < 2 and 4 < 3) # False - because both statements are false
+print(3 > 2 or 4 > 3)  # True - because both statements are true
+print(3 > 2 or 4 < 3)  # True - because one of the statement is true
+print(3 < 2 or 4 < 3) # False
+
+print(not 3 > 2) # False
+print(not True) # False
+print(not False) # True
+print(not not True) # True
+print(not not False) # False
 
