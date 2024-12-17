@@ -46,8 +46,8 @@ print(len(fullName))
 
 print(f"Topics: Days\tPlays\t Games")
 
-print('This is a backslash symbol (\\)') # To write a special charecter use \
-print("I am a pro player in \"Hello, World!\" other people and languages")
+print("This is a backslash symbol (\\)")  # To write a special charecter use \
+print('I am a pro player in "Hello, World!" other people and languages')
 
 
 """ String Interpolation / f-Strings (Python 3.6+): """
@@ -55,12 +55,12 @@ print("I am a pro player in \"Hello, World!\" other people and languages")
 a = 4
 b = 7
 
-print(f'{a} + {b} = {a + b}')
-print(f'{a} / {b} = {a / b}')
-print(f'{a} / {b} = {a / b:.2f}')
-print(f'{a} // {b} = {a // b}')
-print(f'{a} % {b} = {a % b}')
-print(f'{a} ** {b} = {a**b}')
+print(f"{a} + {b} = {a + b}")
+print(f"{a} / {b} = {a / b}")
+print(f"{a} / {b} = {a / b:.2f}")
+print(f"{a} // {b} = {a // b}")
+print(f"{a} % {b} = {a % b}")
+print(f"{a} ** {b} = {a**b}")
 
 """
 OBS: Division in python -->
@@ -82,22 +82,21 @@ print(resultado)  # Saída: 1
 """
 
 
-
 """ Accessing Characters in Strings by Index: """
 
-lang = 'python'
+lang = "python"
 firstLetter = lang[0]
 print(firstLetter)
 secondLetter = lang[1]
 print(secondLetter)
-lastIndex = len(lang) -1 # -1 return the last index in any given array
+lastIndex = len(lang) - 1  # -1 return the last index in any given array
 lastLetter = lang[lastIndex]
 print(lastIndex)
 print(lastLetter)
 
 """ If we want to start from right end we can use negative indexing. -1 is the last index: """
 
-language = 'Python'
+language = "Python"
 last_Letter = language[-1]
 print(last_Letter)
 secondLast = language[-2]
@@ -106,32 +105,89 @@ print(secondLast)
 """ Slicing Python Strings: 
 In python we can slice strings into substrings --> """
 
-langtest = 'PyMaster'
-firstTWO = langtest[0:2] # The last num doesnt count -> exple: 0:7 only counts the follow indexes -> 0 1 2 3 4 5 6, NOT the last (7)
+langtest = "PyMaster"
+firstTWO = langtest[
+    0:2
+]  # The last num doesnt count -> exple: 0:7 only counts the follow indexes -> 0 1 2 3 4 5 6, NOT the last (7)
 print(firstTWO)
 
-lastTHREE = langtest[5:8] # --> 8, to include 5 6 and the last (7)
+lastTHREE = langtest[5:8]  # --> 8, to include 5 6 and the last (7)
 print(lastTHREE)
-lastTHREEb = langtest[-3:] # Another way to print the 3 last letters, demanding the code to go for the last index and rollback n indexes(3 in case) asked, counting with the last
-print(lastTHREEb) 
-lastTHREEc = langtest[5:] # Another way to print the 3 last letters, is like we demand the code go from 5 --> to the last index
+lastTHREEb = langtest[
+    -3:
+]  # Another way to print the 3 last letters, demanding the code to go for the last index and rollback n indexes(3 in case) asked, counting with the last
+print(lastTHREEb)
+lastTHREEc = langtest[
+    5:
+]  # Another way to print the 3 last letters, is like we demand the code go from 5 --> to the last index
 print(lastTHREEc)
 
 """ Reversing a String: """
 
-godPython = 'Hello, Python!'
+godPython = "Hello, Python!"
 print(godPython[::-1])
-myName = 'Rafael Andrade Dutra dos Santos'
+myName = "Rafael Andrade Dutra dos Santos"
 print(myName.lower()[::-1])
 print(myName.upper()[::-1])
 
 """ Skipping Characters While Slicing: """
 
-langtest2 = 'Python'
-pto = langtest2[0:6:2] # the last algarism is the index, the code goes from 0 to the last index (6), skipping 2 indexes counting fromw where it is -->
-# ^^ P 1 2 (P counts) T 1 2 (t counts) O 
+langtest2 = "Python"
+pto = langtest2[
+    0:6:2
+]  # the last algarism is the index, the code goes from 0 to the last index (6), skipping 2 indexes counting fromw where it is -->
+# ^^ P 1 2 (P counts) T 1 2 (t counts) O
 print(pto)
 
 """ << String Methods: """
 
+challenge = "thirty days of python"
+print(challenge.capitalize())  # --> Thirty days of python
+print(challenge.title())  # --> Thirty Days Of Python
 
+couting = "thirty days of python"
+print(couting.count("y"))  # --> returns the accorrences of substrings
+print(
+    couting.count("y", 5, 14)
+)  # --> 5 is the start to count(index) and 14 is the count ending(index)
+print(couting.count("th"))
+
+endwith = "thirty days of python"
+print(endwith.endswith("on"))
+print(endwith.endswith("tion"))
+
+low = "Tird DAYS Of PyTHon"
+print(low.lower())
+
+up = "thirty days of python"
+print(up.upper())
+
+striper = "    Hello    "
+striperB = "$$$HelloA$$$$"
+
+print(striper.strip())
+print(striperB.strip("$"))
+
+LRSstriper = "###HELO###"
+print(LRSstriper.lstrip("#"))
+print(LRSstriper.rstrip("#"))
+
+splitter = "Hello World"
+print(
+    splitter.split()
+)  # --> Splits a string into a list of substrings based on a delimiter (default is whitespace).
+
+lista = "apple, banana, kaki"
+print(lista.split(","))
+
+words = ["Hello", "Python"]
+print(" ".join(words))
+
+hello = "Hello, Python!"
+print(hello.replace("Python", "World"))
+
+finder = "Hello World"
+print(
+    finder.find("world")
+)  # --> Returns the index of the first occurrence of a substring. Returns -1 if not found.
+print(finder.find("World"))
