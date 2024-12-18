@@ -17,7 +17,11 @@ A **variable** is a "container" to store data.
 To create a variable:  
 ```python
 # Syntax: variable_name = value
-
+Must start with a letter or an underscore (_).
+Can contain letters, numbers, and underscores.
+Cannot use spaces or special characters (like @, #, $).
+Case-sensitive: age and Age are different.
+"""
 name = "Alice"       # String (text)
 age = 25             # Integer (whole number)
 height = 5.8         # Float (decimal)
