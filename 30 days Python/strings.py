@@ -192,3 +192,25 @@ print(
 )  # --> Returns the index of the first occurrence of a substring. Returns -1 if not found.
 print(finder.find("World"))
 
+
+beguin = "Hello, Worlds!!"
+print(beguin.startswith("hello"))
+print(beguin.startswith("Hello"))
+print(beguin.endswith("Worlds"))
+print(beguin.endswith("Worlds!!"))
+
+digit = "1234567890"
+digit2 = "1234567890A"
+print(digit.isdigit())
+print(digit2.isdigit())
+
+alphabetic = "HelOou"
+alphabetic2 = "HelO3ou"
+print(alphabetic.isalpha())
+print(alphabetic2.isalpha())
+
+
+alphanumeric = "123Alphabet"
+alphanumeric2 = "123 Alphabet"  # --> space is not alphanumeric
+print(alphanumeric.isalnum())
+print(alphanumeric2.isalnum())
