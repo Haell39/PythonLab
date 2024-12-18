@@ -139,78 +139,101 @@ pto = langtest2[
 # ^^ P 1 2 (P counts) T 1 2 (t counts) O
 print(pto)
 
-""" << String Methods: """
+# << String Methods in Python
 
+# Capitalization Methods
 challenge = "thirty days of python"
-print(challenge.capitalize())  # --> Thirty days of python
-print(challenge.title())  # --> Thirty Days Of Python
+print(challenge.capitalize())  # Output: "Thirty days of python"
+print(challenge.title())  # Output: "Thirty Days Of Python"
 
-couting = "thirty days of python"
-print(couting.count("y"))  # --> returns the accorrences of substrings
-print(
-    couting.count("y", 5, 14)
-)  # --> 5 is the start to count(index) and 14 is the count ending(index)
-print(couting.count("th"))
+# Count Method
+counting = "thirty days of python"
+print(counting.count("y"))  # Returns the occurrences of "y"
+print(counting.count("y", 5, 14))  # Count "y" from index 5 to 14
+print(counting.count("th"))  # Returns the occurrences of "th"
 
-endwith = "thirty days of python"
-print(endwith.endswith("on"))
-print(endwith.endswith("tion"))
+# Endswith Method
+end_with = "thirty days of python"
+print(end_with.endswith("on"))  # Output: True
+print(end_with.endswith("tion"))  # Output: False
 
+# Case Conversion
 low = "Tird DAYS Of PyTHon"
-print(low.lower())
+print(low.lower())  # Output: "tird days of python"
 
 up = "thirty days of python"
-print(up.upper())
+print(up.upper())  # Output: "THIRTY DAYS OF PYTHON"
 
+# Strip Methods
 striper = "    Hello    "
 striperB = "$$$HelloA$$$$"
 
-print(striper.strip())
-print(striperB.strip("$"))
+print(striper.strip())  # Removes surrounding whitespace
+print(striperB.strip("$"))  # Removes surrounding "$"
 
 LRSstriper = "###HELO###"
-print(LRSstriper.lstrip("#"))
-print(LRSstriper.rstrip("#"))
+print(LRSstriper.lstrip("#"))  # Removes leading "#"
+print(LRSstriper.rstrip("#"))  # Removes trailing "#"
 
+# Split and Join Methods
 splitter = "Hello World"
-print(
-    splitter.split()
-)  # --> Splits a string into a list of substrings based on a delimiter (default is whitespace).
+print(splitter.split())  # Splits by whitespace into ["Hello", "World"]
 
 lista = "apple, banana, kaki"
-print(lista.split(","))
+print(lista.split(","))  # Splits by comma into ["apple", " banana", " kaki"]
 
 words = ["Hello", "Python"]
-print(" ".join(words))
+print(" ".join(words))  # Joins list into "Hello Python"
 
+# Replace Method
 hello = "Hello, Python!"
-print(hello.replace("Python", "World"))
+print(hello.replace("Python", "World"))  # Output: "Hello, World!"
 
+# Find Method
 finder = "Hello World"
-print(
-    finder.find("world")
-)  # --> Returns the index of the first occurrence of a substring. Returns -1 if not found.
-print(finder.find("World"))
+print(finder.find("world"))  # Output: -1 (not found)
+print(finder.find("World"))  # Output: 6 (index of "World")
 
+# Startswith and Endswith Methods
+begin = "Hello, Worlds!!"
+print(begin.startswith("hello"))  # Output: False
+print(begin.startswith("Hello"))  # Output: True
+print(begin.endswith("Worlds"))  # Output: False
+print(begin.endswith("Worlds!!"))  # Output: True
 
-beguin = "Hello, Worlds!!"
-print(beguin.startswith("hello"))
-print(beguin.startswith("Hello"))
-print(beguin.endswith("Worlds"))
-print(beguin.endswith("Worlds!!"))
-
+# Check Methods
+# isdigit
 digit = "1234567890"
 digit2 = "1234567890A"
-print(digit.isdigit())
-print(digit2.isdigit())
+print(digit.isdigit())  # Output: True
+print(digit2.isdigit())  # Output: False
 
+# isalpha
 alphabetic = "HelOou"
 alphabetic2 = "HelO3ou"
-print(alphabetic.isalpha())
-print(alphabetic2.isalpha())
+print(alphabetic.isalpha())  # Output: True
+print(alphabetic2.isalpha())  # Output: False
 
-
+# isalnum
 alphanumeric = "123Alphabet"
-alphanumeric2 = "123 Alphabet"  # --> space is not alphanumeric
-print(alphanumeric.isalnum())
-print(alphanumeric2.isalnum())
+alphanumeric2 = "123 Alphabet"  # Space is not alphanumeric
+print(alphanumeric.isalnum())  # Output: True
+print(alphanumeric2.isalnum())  # Output: False
+
+# Partition Method
+s = "hello world"
+print(s.partition(" "))  # Splits into ("hello", " ", "world")
+
+# Formatting Strings
+name = "rael"
+age = 25
+print("My name is {} and I am {} years old".format(name, age))
+print(f"My name is {name} and I am {age} years old")  # New and better way
+
+# Encode Method
+a = "hello"
+print(a.encode())  # Encodes string to bytes
+
+# Casefold Method
+s = "HELLOß"
+print(s.casefold())  # Output: "helloss"
