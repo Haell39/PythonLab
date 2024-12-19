@@ -18,6 +18,5 @@ countries = ['Finland', 'Estonia', 'Denmark', 'Sweden', 'Norway']
 
 print('Fruits: ', fruits)
 print('Number of fruits: ', len(fruits))
-
-
+print
 
