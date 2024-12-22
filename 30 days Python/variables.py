@@ -30,8 +30,4 @@ print('Person information', personInfo)
 print('\n' + '-----------------------------------------------------------')
 first_name, last_name, country, age, is_married = 'Rael', 'Saint', 'Brazil', 27, True
 
-print(first_name)
-print(last_name)
-print(country)
-print(age)
-print(is_married)
+print(first_name, last_name, country, age, is_married)

@@ -114,6 +114,7 @@ print(len('milk') == len('potato'))
 print(len('python') == len('dragon'))
 
 print('\n')
+print("------------------- Boolean comparison -------------------")
 # Boolean comparison
 
 print('True == True', True == True)
@@ -128,16 +129,17 @@ print('True or False', True or False)
 print('1 is 1', 1 is 1)
 print('1 is not 1', 1 is not 1)
 print('A in Rael', 'A' in 'Rael')
-print('B in ball', 'B' in 'ball') # False, theres is on uppercase
+print('B in ball', 'B' in 'ball') # False, there is on uppercase
 print('coding' in 'coding for all')
 print('a' not in 'Rael')
 print('a in an', 'a' in 'an')
 print('4 is 2 ** 2', 4 is 2 ** 2)
 
+print("------------------- Boolean -------------------")
 
-print(3 > 2 and 4 > 3) # True - because both statements are true
+print(3 > 2 and 4 > 3) #or you can simplify -> (2 < 3 < 4) --> True - because both statements are true
 print(3 > 2 and 4 < 3) # False - because the second statement is false
-print(3 < 2 and 4 < 3) # False - because both statements are false
+print(3 < 2 and 4 < 3) #or you can simplify -> (4 < 3 < 2) --> False - because both statements are false
 print(3 > 2 or 4 > 3)  # True - because both statements are true
 print(3 > 2 or 4 < 3)  # True - because one of the statement is true
 print(3 < 2 or 4 < 3) # False
@@ -148,3 +150,19 @@ print(not False) # True
 print(not not True) # True
 print(not not False) # False
 
+print("------------------- Assigment Operators -------------------")
+zeta = 6
+zeta += 2
+print(zeta)
+
+oma = 10
+oma -= 2
+print(oma)
+
+emma = 50
+emma *= 2
+print(emma)
+
+imma = 100
+imma /= 2
+print(imma)
