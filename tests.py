@@ -16,7 +16,7 @@ if response.status_code == 200:
     df = pd.DataFrame(data)
 
     # Exibindo os primeiros 5 registros do DataFrame
-    display(df.head())
+    print(df.head())
 else:
     print(f"Erro na requisição: {response.status_code}")
 
