@@ -1,23 +1,8 @@
-import requests
-import pandas as pd
+# Obter o esquema da tabela
+table_ref = dataset_ref.table('crime')
+table = client.get_table(table_ref)
 
-# URL da API que retorna uma lista de posts
-url = "https://jsonplaceholder.typicode.com/posts"
+# Contar colunas com tipo TIMESTAMP
+timestamp_count = len([field for field in table.schema if field.field_type == 'TIMESTAMP'])
 
-# Fazendo a requisição GET para a API
-response = requests.get(url)
-
-# Verificando se a requisição foi bem-sucedida
-if response.status_code == 200:
-    # Convertendo a resposta JSON para um dicionário Python
-    data = response.json()
-
-    # Criando um DataFrame do pandas a partir dos dados
-    df = pd.DataFrame(data)
-
-    # Exibindo os primeiros 5 registros do DataFrame
-    print(df.head())
-else:
-    print(f"Erro na requisição: {response.status_code}")
-
-
+print(f"Número de colunas com TIMESTAMP: {timestamp_count}")
