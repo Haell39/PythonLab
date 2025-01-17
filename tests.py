@@ -7,3 +7,9 @@ def testing():
     print(msg)
 
 testing()
+
+def hello():
+    msg2 = "WindSurf"
+    print(msg2)
+
+hello()
