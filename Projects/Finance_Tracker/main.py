@@ -28,6 +28,6 @@ class CSV:
             writer.writerow(new_entry)
         print("Entry added successfully!")
                    
-            
+            ,
 CSV.initialize_csv()
 CSV.add_entry(datetime.now().strftime("%Y-%m-%d"), 100, "salary", "Monthly salary")
